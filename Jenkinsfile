@@ -11,11 +11,11 @@ pipeline {
    
    stages { 
 
-	  stage('Code Checkout') {
+	  /*stage('Code Checkout') {
             			steps {
                 	git 'https://gitlab.com/vindusree2020/docker-selenium-jenkinsfile-master.git'	
 				}
-			}
+			}*/
       stage('Build Jar') {
             steps {
                 sh 'mvn clean package -DskipTests'
